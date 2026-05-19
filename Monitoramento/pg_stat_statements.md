@@ -62,7 +62,7 @@ SELECT extname, extversion FROM pg_extension WHERE extname = 'pg_stat_statements
 
 | Parâmetro | Padrão | Descrição |
 |---|---|---|
-| `pg_stat_statements.max` | 5000 | Número máximo de queries rastreadas. Quando atingido, as menos usadas são descartadas |
+| `pg_stat_statements.max` | 5000 (usado: 10000) | Número máximo de queries rastreadas. Quando atingido, as menos usadas são descartadas |
 | `pg_stat_statements.track` | `top` | Quais queries rastrear: `top` (somente diretas), `all` (inclui chamadas dentro de funções), `none` |
 | `pg_stat_statements.track_planning` | `off` | Rastrear tempo gasto no planejamento das queries |
 | `pg_stat_statements.track_utility` | `on` | Rastrear comandos utilitários (VACUUM, CREATE TABLE, etc.) |
