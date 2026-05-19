@@ -184,7 +184,7 @@ Para resolver isso, desenvolvi o sistema Query Analytics: um ciclo diário que c
 ### Fluxo
 
 ```
-Grafana consulta vw_query_analytics
+vw_query_analytics
         │
         ├── snapshot_date = hoje  ──► pg_stat_statements (realtime)
         │
